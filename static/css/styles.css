@@ -1,0 +1,287 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para a página da loja e detalhes do produto */
+#product-details {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-image {
+    flex: 1; /* A imagem ocupará metade da largura disponível */
+    text-align: center; /* Centraliza a imagem horizontalmente */
+}
+
+.product-image img {
+    width: 100%; /* Imagem ocupará toda a largura do contêiner */
+    height: auto; /* Altura ajustável conforme a largura */
+    max-height: 400px; /* Altura máxima para a imagem */
+    border-radius: 8px; /* Cantos arredondados */
+    object-fit: contain; /* Redimensiona a imagem para caber dentro do contêiner mantendo a proporção */
+}
+
+.product-info {
+    flex: 1; /* As informações ocuparão metade da largura disponível */
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-info .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-info .description {
+    margin-bottom: 20px;
+}
+
+.product-info .features {
+    margin-bottom: 20px;
+}
+
+.product-info form {
+    margin-top: 20px;
+}
+
+.product-info form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-info form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+}
+
+.product-info form button {
+    padding: 8px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.product-info form button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    #product-details {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+    }
+
+    .product-image,
+    .product-info {
+        width: 100%; /* Ambos ocupam 100% da largura disponível em telas menores */
+    }
+
+    .product-image img {
+        max-height: 300px; /* Reduz altura máxima da imagem em telas menores */
+    }
+}
+
+/* Estilos específicos para a seção de boas-vindas */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-right {
+    flex: 1;
+    text-align: right;
+}
+
+.image-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para a seção de contato */
+.contact-section {
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section form input,
+.contact-section form select,
+.contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #555;
+}
+/* Estilos para o botão de agendamento */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+/* Estilos para a seção de serviços */
+.service-section {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px); /* Três colunas com espaço entre */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex: 1 1 calc(50% - 40px); /* Duas colunas com espaço entre em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        flex: 1 1 100%; /* Uma coluna em telas ainda menores */
+    }
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+/* Estilos para a seção de "Quem Somos" */
+.about-section {
+    padding: 20px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.about-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+}
+
+.about-section b {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 10px;
+    }
+}

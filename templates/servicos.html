@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="service-section">
+    <h1>Nossos Serviços</h1>
+    <p>Na J A Solução, oferecemos uma gama de serviços para atender às suas necessidades de TI:</p>
+    <div class="service-container">
+        <div class="service">
+            <h2>Consultoria em TI</h2>
+            <p><b>J A SOLUÇÃO</b>, oferecemos serviços especializados de consultoria em TI para o setor varejista. Entendemos que cada negócio tem suas necessidades únicas e, por isso, trabalhamos de perto com você para analisar e identificar as melhores soluções tecnológicas que impulsionarão a eficiência e o crescimento do seu negócio. Desde a avaliação inicial até a implementação de estratégias personalizadas, nosso objetivo é otimizar seus processos e garantir que você esteja sempre um passo à frente da concorrência. Com a nossa expertise, ajudamos a transformar a TI em um diferencial competitivo para o seu varejo.</p>
+        </div>
+        <div class="service">
+            <h2>Manutenção de Computadores</h2>
+            <p>Nossa equipe de técnicos especializados está pronta para fornecer serviços completos de instalação e configuração de hardware e software, assegurando que todas as suas tecnologias estejam integradas e funcionando perfeitamente. Quer se trate de configurar uma nova rede, instalar sistemas de ponto de venda, ou implementar soluções de segurança, garantimos uma implementação rápida e eficiente, minimizando o tempo de inatividade e maximizando a produtividade. Confie em nós para realizar uma configuração profissional e adaptada às necessidades específicas do seu varejo, permitindo que você se concentre no que faz de melhor: atender seus clientes.</p>
+        </div>
+        <div class="service">
+            <h2>Suporte Técnico</h2>
+            <p>Oferecemos suporte técnico abrangente e confiável para garantir que sua infraestrutura de TI funcione sem interrupções. Nosso serviço de suporte técnico está disponível tanto remotamente quanto no local, proporcionando assistência rápida e eficiente sempre que você precisar. Desde a resolução de problemas de hardware e software até a manutenção preventiva, estamos aqui para manter seus sistemas operacionais, protegendo seu negócio contra falhas e garantindo que suas operações diárias ocorram de forma suave e eficiente. Com nosso suporte técnico, você pode ter a tranquilidade de saber que especialistas estão cuidando da sua TI.</p>
+        </div>
+        <div class="service">
+            <h2>Desenvolvimento de Software Personalizado</h2>
+            <p>Na <b>J A SOLUÇÃO</b>, entendemos que cada negócio possui necessidades específicas que soluções genéricas nem sempre conseguem atender. Por isso, oferecemos serviços de desenvolvimento de software personalizado para o setor varejista. Nossa equipe de desenvolvedores altamente qualificados trabalha em estreita colaboração com você para criar aplicativos e sistemas sob medida que se alinhem perfeitamente aos seus objetivos empresariais. Seja para otimizar operações internas, melhorar a experiência do cliente ou integrar diferentes plataformas, entregamos soluções inovadoras e eficientes que impulsionam a sua competitividade no mercado.</p>
+        </div>
+        <div class="service">
+            <h2>Serviços de Nuvem</h2>
+            <p>Aproveite o poder da nuvem com nossos serviços especializados em cloud computing. Oferecemos soluções completas para migração, hospedagem e gerenciamento de servidores na nuvem, permitindo que seu negócio varejista se beneficie de uma infraestrutura escalável, segura e altamente disponível. Nossa equipe de especialistas auxilia na transição para a nuvem de forma tranquila, garantindo a continuidade dos seus serviços e a proteção dos seus dados. Com nossas soluções de nuvem, você pode reduzir custos operacionais, aumentar a flexibilidade e se concentrar no crescimento do seu negócio, enquanto nós cuidamos da sua infraestrutura tecnológica.</p>
+        </div>
+        <div class="service">
+            <h2>Treinamento</h2>
+            <p>Capacitar sua equipe com o conhecimento e as habilidades necessárias para maximizar o uso das tecnologias de TI é essencial para o sucesso do seu negócio varejista. Oferecemos serviços de treinamento abrangentes que cobrem desde a utilização de novos sistemas e softwares até as melhores práticas de segurança cibernética. Nossos programas de treinamento são personalizados para atender às necessidades específicas da sua equipe, garantindo que todos os colaboradores estejam aptos a utilizar as ferramentas de TI de forma eficaz e eficiente. Com nosso suporte contínuo, ajudamos a construir uma base sólida de conhecimento que impulsiona a produtividade e a inovação no seu negócio.</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="{{ url_for('contato') }}" class="btn">Solicite um Agendamento</a>
+    </div>
+</div>
+{% endblock %}

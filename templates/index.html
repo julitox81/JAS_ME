@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="welcome-section">
+    <div class="text-left">
+        <h1>Bem-vindo à J A Solução</h1>
+        <p>Seja bem-vindo à J A Solução, onde a tecnologia encontra o varejo de forma única e inovadora. Somos apaixonados por transformar desafios em soluções digitais que impulsionam o seu negócio. Como especialistas em TI para o varejo, estamos aqui para simplificar e otimizar cada aspecto da sua operação, garantindo eficiência e crescimento sustentável.</p>
+
+        <p>Explore nossos serviços personalizados, projetados para atender às necessidades únicas do seu negócio. Desde sistemas de gestão de estoque até soluções avançadas de e-commerce, estamos ao seu lado em cada passo da jornada digital. Conte conosco para elevar sua experiência no varejo para o próximo nível.</p>
+    </div>
+    <div class="image-right">
+        <img src="{{ url_for('static', filename='imagens/Pagina_inicial.jpg') }}" alt="Imagem de Boas Vindas">
+    </div>
+</div>
+{% endblock %}

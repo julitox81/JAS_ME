@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section id="products-list">
+    <div class="product-container">
+        {% for produto in produtos %}
+        <div class="product">
+            <a href="{{ url_for('produto', nome_produto=produto['nome']) }}">
+                <img src="{{ url_for('static', filename='imagens/' + produto['imagem']) }}" alt="{{ produto['nome'] }}">
+                <h2>{{ produto['nome'] }}</h2>
+                <p class="price">R$ {{ produto['valor'] }}</p>
+            </a>
+        </div>
+        {% if loop.index % 3 == 0 %}
+        </div><div class="product-container">
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
